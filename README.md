@@ -22,13 +22,13 @@
 ## Install
 
 ```sh
-npm install
+yarn
 ```
 
 ## Run tests
 
 ```sh
-npm run test
+yarn test
 ```
 
 ## Author
