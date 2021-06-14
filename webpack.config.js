@@ -6,7 +6,11 @@ const CopyPlugin = require("copy-webpack-plugin");
 /** @type {import('webpack').Configuration} */
 module.exports = {
   entry: "./src/index.js",
-  output: { path: path.resolve(__dirname, "dist"), filename: "main.js" },
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    filename: "main.js",
+    assetModuleFilename: "assets/images/[hash][ext][query]",
+  },
   resolve: {
     extensions: [".js"],
   },
@@ -27,6 +31,20 @@ module.exports = {
       {
         test: /\.png/,
         type: "asset/resource",
+      },
+      {
+        test: /\.(woff|woff2)$/,
+        use: {
+          loader: "url-loader",
+          options: {
+            limit: 1000,
+            mimetype: "application/font-woff",
+            name: "[name].[ext]",
+            outputPath: "./assets/fonts/",
+            publicPath: "./assets/fonts/",
+            esModule: false,
+          },
+        },
       },
     ],
   },
