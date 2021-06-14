@@ -24,6 +24,10 @@ module.exports = {
         exclude: /node_modules/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "stylus-loader"],
       },
+      {
+        test: /\.png/,
+        type: "asset/resource",
+      },
     ],
   },
   plugins: [
