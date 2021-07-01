@@ -15,6 +15,12 @@ module.exports = {
   },
   resolve: {
     extensions: [".js"],
+    alias: {
+      "@utils": path.resolve(__dirname, "src/utils/"),
+      "@styles": path.resolve(__dirname, "src/styles/"),
+      "@templates": path.resolve(__dirname, "src/templates/"),
+      "@images": path.resolve(__dirname, "src/assets/images/"),
+    },
   },
   module: {
     rules: [
@@ -43,7 +49,7 @@ module.exports = {
             mimetype: "application/font-woff",
             name: "[name].[contenthash].[ext]",
             outputPath: "./assets/fonts/",
-            publicPath: "./assets/fonts/",
+            publicPath: "../assets/fonts/",
             esModule: false,
           },
         },
