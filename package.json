@@ -1,0 +1,24 @@
+{
+  "name": "intro-to-webpack",
+  "version": "1.0.0",
+  "description": "First repository in which I will work with Webpack 🎲",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "type": "git",
+    "url": "git+https://github.com/jrodriguezdiazz/intro-to-webpacl.git"
+  },
+  "keywords": [
+    "webpack",
+    "javascript",
+    "react",
+    "es6"
+  ],
+  "author": "jrodriguezdiazz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jrodriguezdiazz/intro-to-webpacl/issues"
+  },
+  "homepage": "https://github.com/jrodriguezdiazz/intro-to-webpacl#readme",
+  "devDependencies": {}
+}
