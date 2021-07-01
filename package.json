@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode production --config webpack.config.js",
     "dev": "webpack --config webpack.config.dev.js",
-    "watch": "yarn dev --watch"
+    "watch": "yarn dev --watch",
+    "ci": "node ./scripts/create-env.js && yarn build"
   },
   "repository": {
     "type": "git",
