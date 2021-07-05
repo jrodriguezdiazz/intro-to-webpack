@@ -1,21 +1,33 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
-import github from "../images/github.png";
-import instagram from "../images/instagram.png";
-import twitter from "../images/twitter.png";
+import github from "@images/github.png";
+import instagram from "@images/instagram.png";
+import twitter from "@images/twitter.png";
 
 export const Social = () => {
   return (
-    <div class="card_social">
-      <a href="https://twitter.com/gndx">
+    <div className="card_social">
+      <Link
+        to={{ pathname: "https://twitter.com/jrodriguezdiazz" }}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src={twitter} />
-      </a>
-      <a href="https://github.com/gndx">
+      </Link>
+      <Link
+        to={{ pathname: "https://github.com/jrodriguezdiazz" }}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src={github} />
-      </a>
-      <a href="https://instagram.com/gndx">
+      </Link>
+      <Link
+        to={{ pathname: "https://instagram.com/jrodriguezdiazz" }}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <img src={instagram} />
-      </a>
+      </Link>
     </div>
   );
 };
