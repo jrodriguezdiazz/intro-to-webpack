@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "type": "git",
-    "url": "git+https://github.com/jrodriguezdiazz/intro-to-webpacl.git"
+    "build": "webpack --mode production --config webpack.config.js",
+    "start": "webpack serve --config webpack.config.js"
   },
   "keywords": [
     "webpack",
@@ -16,6 +16,10 @@
   ],
   "author": "jrodriguezdiazz",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrodriguezdiazz/intro-to-webpacl.git"
+  },
   "bugs": {
     "url": "https://github.com/jrodriguezdiazz/intro-to-webpacl/issues"
   },
