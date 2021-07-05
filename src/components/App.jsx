@@ -1,7 +1,9 @@
+import { Profile } from "./Profile";
+
 export const App = () => {
   return (
     <div>
-      <h1>Hello World</h1>
+      <Profile />
     </div>
   );
 };
